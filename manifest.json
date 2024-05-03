@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Twitch Points Collector",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": {
+            "48": "icons/logo-48.png",	
+            "96": "icons/logo-96.png"
+        }
+    },
+    "icons": {
+        "48": "icons/logo-48.png",
+        "96": "icons/logo-96.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["*://*.twitch.tv/*"],
+          "js": ["src/main.js"]
+        }
+    ]
+}
